@@ -8,7 +8,7 @@
 ![Vite](https://img.shields.io/badge/Vite-4.0-646CFF?style=flat-square&logo=vite)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-**Sitio web moderno y profesional para agencia de desarrollo fullstack, automatizaciones y soluciones empresariales**
+**Sitio web moderno y profesional para agencia de desarrollo fullstack, automatizaciones y soluciones empresariales.**
 
 [🌐 Ver Demo](#) • [📖 Documentación](#documentación) • [🚀 Deploy Rápido](#deploy-a-vercel) • [📞 Contacto](#contacto)
 

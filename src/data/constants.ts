@@ -1,12 +1,13 @@
 export const BRAND_NAME = 'ArgenDevs'
 export const BRAND_TAGLINE = 'Automatización y desarrollo web a medida'
 
-export const WHATSAPP_NUMBER = '+541138482738'
-export const CONTACT_EMAIL = 'fedeuade2023@gmail.com'
+export const WHATSAPP_NUMBER_FEDERICO = '+541138482738'
+export const WHATSAPP_NUMBER_MATEO = '+541126290810'
+export const CONTACT_EMAIL = 'argendevelopers@gmail.com'
 
 export const SOCIAL_LINKS = {
-  linkedin: 'https://www.linkedin.com/in/federico-prieto-b60037218/',
-  instagram: 'https://www.instagram.com/fedee_prieto_/',
+  linkedin: '',
+  instagram: 'https://www.instagram.com/argen_devs/',
 } as const
 
 export const PRIMARY_COLOR = '#2537A8'

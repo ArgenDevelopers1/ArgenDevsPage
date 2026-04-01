@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ArrowRight, MessageCircle, Zap, Code2, Gauge } from 'lucide-react'
 import { useScrollBehavior } from '../hooks/useScrollBehavior'
 
 export const Hero: React.FC = () => {
   const { scrollToSection } = useScrollBehavior()
+  const [currentWhatsAppIndex, setCurrentWhatsAppIndex] = useState(0)
+
+  const whatsappNumbers = ['+5491138482738', '+541126290810']
+
+  const handleWhatsAppClick = () => {
+    const number = whatsappNumbers[currentWhatsAppIndex]
+    window.open(`https://wa.me/${number}?text=Hola%2C%20quisiera%20hablar%20sobre%20un%20proyecto.`, '_blank')
+    setCurrentWhatsAppIndex((prev) => (prev + 1) % whatsappNumbers.length)
+  }
 
   return (
     <section
@@ -57,15 +66,13 @@ export const Hero: React.FC = () => {
               />
             </button>
 
-            <a
-              href="https://wa.me/+34912345678?text=Hola%20Flux%21%20Quisiera%20hablar%20sobre%20un%20proyecto"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={handleWhatsAppClick}
               className="border-2 border-white text-white px-6 py-2.5 rounded-xl font-display font-bold text-sm hover:bg-white hover:text-primary-950 hover:shadow-xl hover:shadow-white/30 transition-all flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary-950"
             >
               <MessageCircle size={18} />
               WhatsApp
-            </a>
+            </button>
           </div>
 
           {/* Stats Section */}
